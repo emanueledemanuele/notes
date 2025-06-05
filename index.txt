@@ -1,1 +1,19 @@
 https://tinyurl.com/56dkr7et -- edge backup
+
+---------------------------------------------------
+
+PER FARE BACKUP:
+
+cd %LOCALAPPDATA%\Microsoft\Edge\User Data\Default
+
+xcopy . "C:\BackupEdge" /E /H /C /I /Y /Q
+
+---------------------------------------------------
+
+PER CARICARE IL BACKUP:
+
+cd %LOCALAPPDATA%\Microsoft\Edge\User Data\Default
+
+xcopy "C:\BackupEdge\*" . /E /H /C /I /Y /Q
+
+*ricorda di creare la cartella BackupEdge in C:\ e di inserire i file!
